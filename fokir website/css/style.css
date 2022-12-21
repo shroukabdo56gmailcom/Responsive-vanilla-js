@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+header {
+    background: url(../img/slider/slider-01.jpg)  ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header h2 {
+    color: #ff305b;
+    float: left;
+}
+
+header li {
+    margin: 10px;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #ff305b;
+}
+.portfolio a:hover {
+    color: #ff305b;
+}
+header i{
+    color: #fff;
+    position: absolute;
+    top :20px;
+    right: 20px;
+visibility: hidden;}
+header ul {
+
+    float: right;
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.5s;
+
+}
+
+header nav {
+    padding: 10px 0;
+    position: relative;
+
+}
+.clr{
+    clear: both;
+}
+.h-cont {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    
+}
+.b-r{
+    border-right: solid 1px white;
+}
+.h-cont p {
+    font-size: 25px;
+    font-weight: bold;
+    display: inline;
+    padding-right: 8px;
+}
+.pd{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.h-cont h1 {
+    font-size: 70px;
+    color: #ff305b;
+    font-weight: 900;
+}
+.about-img{
+    float: left;
+    width: 50%;
+}
+.about-cont{
+    float: right;
+    width: 50%;
+    padding-left: 20px;
+
+}
+.img-brd{
+    border: 10px solid gray;
+    width:fit-content;
+    border-radius: 5px;
+}
+.img-brd img{
+    position: relative;
+    left:20px;
+    top: 20px;
+    border-radius: 5px;
+}
+.sw-card{
+    width: 100%;
+    position: relative;
+}
+.div-icons{
+    background-color: rgba(0, 0, 0, 0.399);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 105%;
+    left: 20px;
+    opacity: 0;
+    transition: all 1s;
+}
+.about-img:hover .div-icons{
+    top: 20px;
+    opacity: 1;
+}
+.about-cont h2{
+font-size: 30px;
+font-weight: bold;
+border-left: #ff305b solid 4px;
+display: inline;
+padding-left:8px;
+color: black;
+}
+.about-cont{
+    color: gray;
+}
+.about-cont p{
+padding: 20px 0px;
+font-weight: bold;
+line-height: 1.5;
+border-bottom: black dashed 1px;
+width: 100%;
+}
+.about-cont ul{
+list-style: none;
+padding: 5% 0 ;
+padding-right: 5%;
+/* width: 50%; */
+float: left;
+line-height: 2;
+}
+.about-cont ul span{
+    color: black;
+    font-weight: bolder;
+}
+.about-cont button{
+color: white;
+font-weight: bold;
+font-size: 16px;
+padding: 15px 20px;
+background-color: #ff305b;
+border: none;
+border-radius: 5px;
+}
+.about-cont button:hover{
+    background-color: red;
+
+}
+.service{
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.service h2{
+text-align: center;
+}
+.serv-box{
+    width: 25%;
+    text-align: center;
+    padding: 20px 5px;
+    float: left;
+
+}
+.serv-box:hover{
+    background-color: white;
+    box-shadow: #d6d4d4 0px 2px 10px;
+}
+.serv-box:hover i{
+    transform: scale(1.3);
+}
+.serv-box i,.serv-box h3,.serv-box p{
+padding: 10px ;
+}
+.serv-box i{
+    color: #ff305b;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.icon{
+width: 50%;
+padding: 30px;
+text-align: center;
+margin: auto;
+}
+.dash{
+    width: 80px;
+    height: 0.3px;
+    background-color: #ff305b;
+    margin: 3px auto;
+}
+.plus{
+    width: 200px;
+    
+}
+.serv-div{
+    text-align: center;
+}
+.portfolio ul{
+    margin: 0 auto;
+    width: 35%;
+}
+.portfolio ul li{
+    float: left;
+    margin: 10px;
+}
+.portfolio a{
+    color: rgb(59, 59, 59);
+}
+.item{
+    width: 33%;
+    padding: 20px;
+    float: left;
+}
+.inner{
+    position: relative;
+
+}
+.item img{
+    width: 100%;
+}
+.item-ov{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.333);
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.item:hover .item-ov{
+    opacity: 1;
+}
+.count{
+    background-color: #f1f1f1;
+}
+.count-box{
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+.count-box h3{
+    margin: 10px;
+}
+.count-box i{
+    color: #ff305b;
+    transform: scale(1.3);
+}
+.count-box h4{
+color: gray;
+}
+.slider{
+    text-align: center;
+    display: inline-block;
+}
+.slider p{
+    padding:10px 0px;
+    font-style: italic;
+}
+.slid-box{
+    overflow: hidden;
+    width: 70%;
+    background-color: #f1f1f1;
+    text-align: left;
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+}
+.slid-box .skew{
+    width: 200px;
+    height: 200px;
+    background-color: #ff305b;
+    transform: skew(-50deg);
+    position: relative;
+    left: -120px;
+    float: left;
+}
+.slid-box img{
+    border-radius: 50%;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    transform: scale(0.8);
+}
+.slid-box div{
+    padding: 30px;
+}
+.slid-box h5{
+    padding: 10px 0;
+    color: grey;
+    font-size: 16px;
+}
+.slid-box i{
+    color: yellow;
+}
+.blog{
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.blog-card{
+    width: 33%;
+    padding: 20px;
+    float: left;
+
+}
+.blog-card img{
+width :100%;
+}
+.blog-card .in-box{
+    text-align: start;
+    padding: 20px;
+}
+.blog .blog-inner{
+    background-color: #fff;
+}
+.blog-card h5,.blog-card h3,.blog-card p,.blog-card button{
+    padding: 8px;
+    font-size:medium
+}
+.blog-card h5,.blog-card p{
+    color: rgb(79, 79, 79);
+}
+.blog-card button{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+form{
+    width: 60%;
+    margin: auto;
+}
+form input{
+    width:49%;
+    padding: 10px;
+    border: solid gray 1px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.in-two{
+float: right;
+}
+.w-100{
+    width: 100%;
+}
+textarea{
+    height: 100px;
+    margin: 10px 0;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+.form button{
+    color: white;
+font-weight: bold;
+font-size: 16px;
+padding: 15px 20px;
+background-color: #ff305b;
+border: none;
+border-radius: 5px;
+}
+.form button:hover{
+    background-color: red;
+
+}
+footer{
+    text-align: center;
+    background-color: #333333;
+    color:#fff;
+    font-size: large;
+}
+footer i {
+    margin: 15px 10px;
+}
+footer span{
+color: #ff305b;
+}
