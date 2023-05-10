@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <input type="text" placeholder="Name" id="input">
+            <button id="btn" onclick="x()">ok</button>
+            <div id="hi"></div> -->
+        <form action="">
+            <input type="text" class="form-control my-4" placeholder="Name" id="nameInput"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="number" class="form-control my-4" placeholder="id" id="idInput"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="number" class="form-control my-4" hidden id="hiddInput"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <button type="button" class="btn btn-primary" id="addRow" onclick="getInfo()">Add row</button>
+            <button type="button" class="btn btn-primary" style="display: none;" id="editrow" onclick="EditRow()">Edit row</button>
+            <button type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+        </form>
+        <input type="text" onkeyup="search()" id="searchInput" class="form-control my-4" placeholder="search..." id="nameInput">
+
+        <table class="table text-center table-striped my-5">
+            <thead>
+                <tr class=" ">
+                    <th scope="col">Index</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">update</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+        <script src="js.js"></script>
+</body>
+
+</html>
